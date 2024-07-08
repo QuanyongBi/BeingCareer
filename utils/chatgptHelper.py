@@ -5,7 +5,7 @@ import openai
 
 # for testing purpose, put the api_key below.
 client = OpenAI(
-    api_key="sk-proj-Lp6WDAvf5rpvf45wCbhFT3BlbkFJP8Jqv0v6bY6exUA8j5kL"
+    api_key=""
 )
 
 sample_resume = """
