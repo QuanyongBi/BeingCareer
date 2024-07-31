@@ -1,6 +1,7 @@
 from django.urls import path
-from . import views
+from .views import ResumeApiView, ResumeDetailApiView
 
 urlpatterns = [
-    # Add other URL patterns here
+    path('api/', ResumeApiView.as_view(), name='resume_api'),
+    path('api/<uuid:uid>/', ResumeDetailApiView.as_view(), name='resume_detail_api'),
 ]
